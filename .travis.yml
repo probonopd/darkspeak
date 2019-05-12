@@ -9,9 +9,9 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get -y install gcc-8 g++-8 qt512base qt512declarative qt512quickcontrols qt512quickcontrols2 libsodium-dev
+  - sudo apt-get -y install gcc-7 g++-7 qt512base qt512declarative qt512quickcontrols qt512quickcontrols2 libsodium-dev
   - source /opt/qt*/bin/qt*-env.sh
-  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
   - sudo update-alternatives --config gcc
 
 script:
